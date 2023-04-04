@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    <title>CSS - Task Panel</title>
+</head>
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand nav-logo" href="#">SH</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="http://task-panel.shraddha.gediya.radixusers3.com/html.html" target="_blank">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://task-panel.shraddha.gediya.radixusers3.com/css.html">CSS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://task-panel.shraddha.gediya.radixusers3.com/bootstrap.html" target="_blank">Bootstrap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://task-panel.shraddha.gediya.radixusers3.com/tailwind.html" target="_blank">Tailwind CSS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://task-panel.shraddha.gediya.radixusers3.com/javascript.html">JavaScript</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+              
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- main section -->
+    <section class="banner-section css-file">
+        
+        <div class="row g-0">
+            <div class="col-3">
+                <div class="side-nav h-100">
+                    <ul class="list-unstyled side-nav-ul" id="v-pills-tab" role="tablist" >
+                        <button class="side-nav-li text-start active" data-bs-toggle="pill" data-bs-target="#v-pills-intro" type="button" role="tab">CSS Intro</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-how-to" type="button" role="tab">CSS How To Add</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-border" type="button" role="tab">CSS Border</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-margin" type="button" role="tab">CSS Margin</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-padding" type="button" role="tab">CSS Padding</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-position" type="button" role="tab">CSS Position</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-justify" type="button" role="tab">CSS Justify</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-align" type="button" role="tab">CSS Align</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-selector" type="button" role="tab">CSS Selector</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-transition" type="button" role="tab">CSS Transition</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-masking" type="button" role="tab">CSS Masking</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-counter" type="button" role="tab">CSS Counter</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-pseudo" type="button" role="tab">CSS Pseudo Class</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-css-demos" type="button" role="tab">CSS Demos</button>
+                        <div class="my-5"></div>
+                        <div class="py-5"></div>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-9 py-5 pe-5">
+                <div class="">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade  show active" id="v-pills-intro" role="tabpanel"  tabindex="0"> 
+                            <div class="card css-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5">CSS Introduction</p>
+                                <p>CSS stands for Cascading Style Sheets</p>
+                                <p>CSS describes how HTML elements are to be displayed on screen, paper, or in other media</p>
+                                <p>CSS saves a lot of work. It can control the layout of multiple web pages all at once</p>
+                                <p>External stylesheets are stored in CSS files</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-how-to" role="tabpanel"  tabindex="0">
+                            <div class="card rounded-0 shadow-sm p-4">
+                                <div class="use-of-pre">
+                                    <p class="fw-bold h5">How to Add CSS</p>
+                                    <p class="fw-bold">There are Three ways to Insert CSS</p>
+                                    <ul>
+                                        <li>External CSS</li>
+                                        <li>Internal CSS</li>
+                                        <li>Inline CSS</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-border" role="tabpanel"  tabindex="0">
+                            <div class="card border-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">CSS Border</p>
+                                <p class="dotted">A dotted border with border-color.</p>
+                                <p class="dashed">A dashed border.</p>
+                                <p class="solid">A solid border with border radius.</p>
+                                <p class="double">A double border.</p>
+                                <p class="groove">A groove border.</p>
+                                <p class="ridge">A ridge border.</p>
+                                <p class="inset">An inset border.</p>
+                                <p class="outset">An outset border.</p>
+                                <p class="none">No border.</p>
+                                <p class="hidden">A hidden border.</p>
+                                <p class="mix">A mixed border.</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-margin" role="tabpanel"  tabindex="0">
+                            <div class="card html-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5">CSS Margin</p>
+                                <div class="spacing-concept">
+                                    <div class="container mb-4">
+                                        <div class="box mt-5">
+                                            <p>This element has a margin top of 48px</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-padding" role="tabpanel"  tabindex="0">
+                            <div class="card html-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5">CSS Padding</p>
+                                <div class="spacing-concept">
+                                    <div class="container mb-4">
+                                        <div class="box mt-3">
+                                            <p class="pt-4">This para has a padding top of 48px</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-position" role="tabpanel"  tabindex="0">
+                            <div class="card html-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5">CSS Position</p>
+                                <div class="position-concept">
+                                    <div class="p-relative ">
+                                        <p class="text-center">Position Relative</p>
+                                        <div class="p-absolute m-auto">
+                                            <!-- <p>Position Absolute</p> -->
+                                            <p class="mb-0 t-0">absolute top left</p>
+                                            <p class="mb-0 b-0">absolute bottom left</p>
+                                            <p class="mb-0 l-0">absolute bottom top</p>
+                                            <p class="mb-0 r-0">absolute bottom left</p>
+                                        </div>
+                                    </div>
+                                    <p class="p-sticky">Position Sticky</p>
+                                    <div class="p-fixed mb-0">
+                                        <p class="text-dark mb-0">Demo Link</p>
+                                        <a href="http://html-demo.shraddha.gediya.radixusers3.com/" target="_blank">Custom Demo 1</a>
+                                    </div>
+                                </div>
+                                <div class="my-5"></div>
+                                <div class="py-5"></div>
+                                <div class="my-5"></div>
+                                <div class="py-5"></div>
+                                <div class="my-5"></div>
+                                <div class="py-5"></div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-justify" role="tabpanel"  tabindex="0">
+                            <div class="card html-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5">CSS Justify</p>
+                                <div class="flex-concept">
+                                    <div class="row">
+                                    <div class="col-12 bg-light h-100 p-5">
+                    
+                                            <div class="row justify-content-center">
+                                                <p class="text-center fw-bold">Justify content-center</p>
+                                                <div class="col-2 bg-dark p-5 text-white">1</div>
+                                                <div class="col-2 bg-warning p-5">2</div>
+                                                <div class="col-2 bg-success p-5">3</div>
+                                            </div>
+                    
+                                            <div class="row justify-content-start mt-4">
+                                                <p class="text-start fw-bold">Justify start </p>
+                                                <div class="col-2 bg-dark p-5 text-white">1</div>
+                                                <div class="col-2 bg-warning p-5">2</div>
+                                                <div class="col-2 bg-success p-5">3</div>
+                                            </div>
+                    
+                                            <div class="row justify-content-end mt-4">
+                                                <p class="text-end fw-bold">Justify end </p>
+                                                <div class="col-2 bg-dark p-5 text-white">1</div>
+                                                <div class="col-2 bg-warning p-5">2</div>
+                                                <div class="col-2 bg-success p-5">3</div>
+                                            </div>
+                    
+                                            <div class="row justify-content-between mt-4">
+                                                <p class="text-center fw-bold">Justify between </p>
+                                                <div class="col-2 bg-dark p-5 text-white">1</div>
+                                                <div class="col-2 bg-warning p-5">2</div>
+                                                <div class="col-2 bg-success p-5">3</div>
+                                            </div>
+                    
+                                            <div class="row justify-content-around mt-4">
+                                                <p class="text-center fw-bold">Justify around </p>
+                                                <div class="col-2 bg-dark p-5 text-white">1</div>
+                                                <div class="col-2 bg-warning p-5">2</div>
+                                                <div class="col-2 bg-success p-5">3</div>
+                                            </div>
+                    
+                                            <div class="row justify-content-evenly mt-4">
+                                                <p class="text-center fw-bold">Justify evenly </p>
+                                                <div class="col-2 bg-dark p-5 text-white">1</div>
+                                                <div class="col-2 bg-warning p-5">2</div>
+                                                <div class="col-2 bg-success p-5">3</div>
+                                            </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-align" role="tabpanel"  tabindex="0">
+                            <div class="card html-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5">CSS Align</p>
+                                <div class="align-items-content bg-info border mt-3">
+                                    <p class="mb-0">Align Items start</p>
+                                    <div class="d-flex  h-150 align-items-start">
+                                        <p class="">1</p>
+                                        <p class="">2</p>
+                                        <p class="">3</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="align-items-content bg-info border mt-3">
+                                    <p class="mb-0">Align Items center</p>
+                                    <div class="d-flex  h-150 align-items-center">
+                                        <p class="">1</p>
+                                        <p class="">2</p>
+                                        <p class="">3</p>
+                                    </div>
+                                </div>
+                    
+                                <div class="align-items-content bg-info border mt-3">
+                                    <p class="mb-0">Align Items end</p>
+                                    <div class="d-flex  h-150 align-items-end">
+                                        <p class="">1</p>
+                                        <p class="">2</p>
+                                        <p class="">3</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="tab-pane fade" id="v-pills-selector" role="tabpanel"  tabindex="0">
+                            <div class="card html-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5">CSS Selector</p>
+                                <div class="css-selectors-main">
+                                    <div class="container my-5">
+                                        <div class="nth-child-css mt-4">
+                                            <p class="text-dark fw-bold">Nth child CSS</p>
+                                            <div class="d-flex">
+                                                <span class="px-3">1</span>
+                                                <span class="px-3">2</span>
+                                                <span class="px-3">3</span>
+                                                <span class="px-3">4</span>
+                                                <span class="px-3">5</span>
+                                                <span class="px-3">6</span>
+                                                <span class="px-3">7</span>
+                                                <span class="px-3">8</span>
+                                                <span class="px-3">9</span>
+                                                <span class="px-3">10</span>
+                                                <span class="px-3">11</span>
+                                                <span class="px-3">12</span>
+                                                <span class="px-3">13</span>
+                                                <span class="px-3">14</span>
+                                                <span class="px-3">15</span>
+                                                <span class="px-3">16</span>
+                                                <span class="px-3">17</span>
+                                                <span class="px-3">18</span>
+                                                <span class="px-3">19</span>
+                                                <span class="px-3">20</span>
+                                                <span class="px-3">21</span>
+                                                <span class="px-3">22</span>
+                                                <span class="px-3">23</span>
+                                                <span class="px-3">24</span>
+                                                <span class="px-3">25</span>
+                                                <span class="px-3">26</span>
+                                                <span class="px-3">27</span>
+                                            </div>
+                                        </div>
+                                
+                        
+                                        <div class="border mt-2 p-3">
+                                            <p class="text-dark fw-bold">The Child Selector (>) selects all elements that are the children of a specified element.</p>
+                                            <div class="parent-div">    
+                                                <span>> selector apply css on it's child element only below example para is sub children of parent.</span>
+                                                <p>para 1</p>
+                                                <p>para 2</p>
+                                            </div>
+                                        </div>
+                        
+                                        <div class="border mt-2 p-3">
+                                            <p class="fw-bold">css selector "+" it selects p tag immediately after div</p>
+                            
+                                            <div class="parent-div">
+                                                <span>Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                                            </div>
+                                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, ratione!</p>
+                                            <p class="mb-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, ratione!</p>
+                                        </div>
+                        
+                                        <div class="border mt-2 p-3">
+                                            <p class="fw-bold">selects every p tag which after div tag</p>
+                                            <div class="parent-div-2">
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                            </div>
+                                            <p class="mb-0">css selector "~"</p>
+                                            <p class="mb-0">css selector "~"</p>
+                                            <p class="mb-0">css selector "~"</p>
+                                        </div>
+                        
+                                        <div class="border mt-2 p-3">
+                                            <span class="fw-bold text-dark">First Child CSS </span>
+                                            <ul class="first-child-css">
+                                                <li>item 1</li>
+                                                <li>item 2</li>
+                                                <li>item 3</li>
+                                            </ul>
+                                        </div>
+                        
+                                        <div class="border mt-2 p-3">
+                                            <div class="first-of-type">
+                                                <span class="fw-bold text-dark">First of Type CSS</span>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                                <p>Lorem ipsum dolor sit amet.</p>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="last-child-css mt-2">
+                                            <p class="fw-bold text-dark">Last Child CSS</p>
+                                            <ul class="ul-main">
+                                                <li>item 1</li>
+                                                <li>item 2</li>
+                                                <li>item 3</li>
+                                            </ul>
+                                        </div>
+                        
+                                        <div class="last-child-type-css mt-3">
+                                            <p class="fw-bold text-dark">Last of Type CSS</p>
+                                            <span class="d-block">span element 1</span>
+                                            <span class="d-block">span element 2</span>
+                                            <span class="d-block">span element 3</span>
+                                            <p>para 1</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-transition" role="tabpanel"  tabindex="0">
+                            <div class="card html-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5">CSS Transition</p>
+                                <div class="transition-css">
+                                    <div class="container">
+                                        <p class="fw-bold text-white">Transition css</p>
+                                        <div class="box" id="div1">linear</div><br>
+                                        <div class="box" id="div2">ease</div><br>
+                                        <div class="box" id="div3">ease-in</div><br>
+                                        <div class="box" id="div4">ease-out</div><br>
+                                        <div class="box" id="div5">ease-in-out</div><br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-masking" role="tabpanel"  tabindex="0">
+                            <div class="card html-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5">CSS Masking</p>
+                                <div class="css-masking">
+                                    <div class="container">
+                                        <p class="fw-bold text-white">Image Masking</p>
+                                        <div class="mask1">
+                                            <img src="./images/location-img.jpg" alt="" width="600" height="400">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-counter" role="tabpanel"  tabindex="0">
+                            <div class="card html-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5">CSS Counter</p>
+                                <div class="css-counter">
+                                    <div class="container">
+                                        <p class="para text-dark">paragraph</p>
+                                        <p class="para text-dark">paragraph</h2>
+                                        <p class="para text-dark">paragraph</h2>
+                                        <p class="para text-dark">paragraph</h2>
+                                        <p class="para text-dark">paragraph</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-pseudo" role="tabpanel"  tabindex="0">
+                            <div class="card pseudo-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5">CSS Pseudo Class</p>
+                                <p><b><a href="default.asp" target="_blank">This is a link</a></b></p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-css-demos" role="tabpanel"  tabindex="0">
+                            <div class="card demo-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5">CSS Demo</p>
+                                <div class="row">
+                                    <div class="col-lg-4 mt-4">
+                                        <div class="card demo-detail-card">
+                                            <img src="./images/css-task-1.png" class="card-img-top p-1" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">CSS Demo 1</h5>
+                                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                                <a href="http://r-html-css-demo-1.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                        <div class="card demo-detail-card">
+                                            <img src="./images/css-task-2.png" class="card-img-top p-1" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">CSS Demo 2</h5>
+                                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                                <a href="http://html-css-demo-2.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                        <div class="card demo-detail-card">
+                                            <img src="./images/css-task-3.png" class="card-img-top p-1" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">CSS Demo 3</h5>
+                                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                                <a href="http://html-css-demo-3.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                        <div class="card demo-detail-card">
+                                            <img src="./images/css-task-4.png" class="card-img-top p-1" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">CSS Demo 4</h5>
+                                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                                <a href="http://html-css-demo-4.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                        <div class="card demo-detail-card">
+                                            <img src="./images/css-task-5.png" class="card-img-top p-1" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">CSS Demo 4</h5>
+                                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                                <a href="http://css-demo-1.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                        <div class="card demo-detail-card">
+                                            <img src="./images/css-exercise-1.png" class="card-img-top p-1" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">CSS Exercise 1</h5>
+                                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                                <a href="http://css-exercise-1.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                        <div class="card demo-detail-card">
+                                            <img src="./images/css-exercise-2.png" class="card-img-top p-1" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">CSS Exercise 2</h5>
+                                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                                <a href="http://css-exercise-2.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                        <div class="card demo-detail-card">
+                                            <img src="./images/css-exercise-3.png" class="card-img-top p-1" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">CSS Exercise 3</h5>
+                                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                                <a href="http://css-exercise-3.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                        <div class="card demo-detail-card">
+                                            <img src="./images/css-exercise-4.png" class="card-img-top p-1" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">CSS Exercise 4</h5>
+                                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                                <a href="http://css-exercise-4.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                        <div class="card demo-detail-card">
+                                            <img src="./images/css-responsive.png" class="card-img-top p-1" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Css Responive</h5>
+                                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                                <a href="http://responsive-exercise-1.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+
+</body>
+</html>

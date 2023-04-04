@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+        <!-- custom css link -->
+        <link rel="stylesheet" href="./CSS/style.css">
+        <!-- js link -->
+      
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+       
+        <!-- font awesome link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Tailwind - Task Panel</title>
+    </head>
+    <body>
+        <!-- header -->
+        <nav class="navbar navbar-expand-lg custom-navbar tailwind-navbar py-2">
+            <div class="container mx-auto">
+                <!-- <a class="navbar-brand nav-logo" href="#">SH</a> -->
+                <div class="navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto flex justify-center">
+                        <li class="nav-item px-2 py-2">
+                            <a class="nav-link" aria-current="page" href="http://task-panel.shraddha.gediya.radixusers3.com/html.html"
+                                target="_blank">HTML</a>
+                        </li>
+                        <li class="nav-item px-2 py-2">
+                            <a class="nav-link" href="http://task-panel.shraddha.gediya.radixusers3.com/css.html">CSS</a>
+                        </li>
+                        <li class="nav-item px-2 py-2">
+                            <a class="nav-link" href="http://task-panel.shraddha.gediya.radixusers3.com/bootstrap.html">Bootstrap</a>
+                        </li>
+                        <li class="nav-item px-2 py-2">
+                            <a class="nav-link" href="http://task-panel.shraddha.gediya.radixusers3.com/tailwind.html">Tailwind CSS</a>
+                        </li>
+                        <li class="nav-item px-2 py-2">
+                            <a class="nav-link" href="http://task-panel.shraddha.gediya.radixusers3.com/javascript.html">JavaScript</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- main section -->
+        <section class="banner-section tailwind-file">
+            <div class="flex g-0">
+            <div class="w-2/6">
+                <div class="side-nav h-full">
+                    <ul class="nav nav-tabs flex flex-col flex-wrap list-none border-b-0 pl-0 mr-4" id="tabs-tabVertical"
+                        role="tablist">
+                        <li class="nav-item flex-grow text-start side-nav-li" role="presentation">
+                            <a href="#tabs-tailwind-intro" class="block" id="tabs-profile-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-tailwind-intro" role="tab">Tailwind Intro</a>
+                        </li>
+                        <li class="nav-item flex-grow text-start side-nav-li" role="presentation">
+                            <a href="#tabs-tailwind-bgcolors" class="block" id="tabs-profile-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-tailwind-bgcolors" role="tab">Tailwind Background Colors</a>
+                        </li>
+                        <li class="nav-item flex-grow text-start side-nav-li" role="presentation">
+                            <a href="#tabs-tailwind-borders" class="block" id="tabs-messages-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-tailwind-borders" role="tab">Tailwind Borders</a>
+                        </li>
+                        <li class="nav-item flex-grow text-start side-nav-li" role="presentation">
+                            <a href="#tabs-tailwind-display" class="block" id="tabs-messages-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-tailwind-display" role="tab">Tailwind Display</a>
+                        </li>
+                        <li class="nav-item flex-grow text-start side-nav-li" role="presentation">
+                            <a href="#tabs-tailwind-margin" class="block" id="tabs-messages-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-tailwind-margin" role="tab">Tailwind Margin</a>
+                        </li>
+                        <li class="nav-item flex-grow text-start side-nav-li" role="presentation">
+                            <a href="#tabs-tailwind-padding" class="block" id="tabs-messages-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-tailwind-padding" role="tab">Tailwind Padding</a>
+                        </li>
+                        <li class="nav-item flex-grow text-start side-nav-li" role="presentation">
+                            <a href="#tabs-tailwind-shadow" class="block" id="tabs-messages-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-tailwind-shadow" role="tab">Tailwind Shadow</a>
+                        </li>
+                        <li class="nav-item flex-grow text-start side-nav-li" role="presentation">
+                            <a href="#tabs-tailwind-text" class="block" id="tabs-messages-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-tailwind-text" role="tab">Tailwind Text</a>
+                        </li>
+                        <li class="nav-item flex-grow text-start side-nav-li" role="presentation">
+                            <a href="#tabs-tailwind-position" class="block" id="tabs-messages-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-tailwind-position" role="tab">Tailwind Positions</a>
+                        </li>
+                        <li class="nav-item flex-grow text-start side-nav-li" role="presentation">
+                            <a href="#tabs-tailwind-z-index" class="block" id="tabs-messages-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-tailwind-z-index" role="tab">Tailwind z-index</a>
+                        </li>
+                        <li class="nav-item flex-grow text-start side-nav-li" role="presentation">
+                            <a href="#tabs-tailwind-width" class="block" id="tabs-messages-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-tailwind-width" role="tab">Tailwind Width</a>
+                        </li>
+                        <li class="nav-item flex-grow text-start side-nav-li" role="presentation">
+                            <a href="#tabs-tailwind-height" class="block" id="tabs-messages-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-tailwind-height" role="tab">Tailwind Height</a>
+                        </li>
+                        <li class="nav-item flex-grow text-start side-nav-li" role="presentation">
+                            <a href="#tabs-tailwind-demo" class="block" id="tabs-messages-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-tailwind-demo" role="tab">Tailwind Demo</a>
+                        </li>
+                    </ul>
+                    <div class="my-5"></div>
+                    <div class="py-5"></div>
+                </div>
+            </div>
+            <div class="w-4/6 pt-10 pr-10">
+                <div class="tailwind-intro">
+                    <div class="tab-content" id="tabs-tabContentVertical">
+                        <div class="tab-pane fade show active" id="tabs-tailwind-intro" role="tabpanel" >
+                            <div class="card shadow p-4">
+                                <p class="font-bold text-xl mb-2">Tailwind Introduction</p>
+                                <ul>
+                                    <li class="mb-4">Highly Customizable.</li>
+                                    <li class="mb-4">Enables building complex responsive layout.</li>
+                                    <li class="mb-4">Responsive and development is easy.</li>
+                                    <li class="mb-4">Components creation is easy.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tabs-tailwind-bgcolors" role="tabpanel" >
+                            <div class="colors-div">
+                                <h5 class="font-black py-3 text-xl">Background Colors</h5>
+                                <p class="px-20 py-3 bg-transparent">BG Transparent</p>
+                                <p class="px-20 py-3 bg-current">BG Current</p>
+                                <p class="px-20 py-3 bg-black text-white">BG black</p>
+                                <p class="px-20 py-3 bg-white">BG white</p>
+                                <p class="px-20 py-3 bg-gray-100">BG gray-100</p>
+                                <p class="px-20 py-3 bg-gray-200">BG gray-200</p>
+                                <p class="px-20 py-3 bg-gray-300">BG gray-300</p>
+                                <p class="px-20 py-3 bg-gray-400">BG gray-400</p>
+                                <p class="px-20 py-3 bg-gray-500">BG gray-500</p>
+                                <p class="px-20 py-3 bg-gray-600">BG gray-600</p>
+                                <p class="px-20 py-3 bg-gray-700">BG gray-700</p>
+                                <p class="px-20 py-3 bg-gray-800">BG gray-800</p>
+                                <p class="px-20 py-3 bg-gray-900">BG gray-900</p>
+                
+                                <p class="px-20 py-3 bg-red-100">BG red-100</p>
+                                <p class="px-20 py-3 bg-red-200">BG red-200</p>
+                                <p class="px-20 py-3 bg-red-300">BG red-300</p>
+                                <p class="px-20 py-3 bg-red-400">BG red-400</p>
+                                <p class="px-20 py-3 bg-red-500">BG red-500</p>
+                                <p class="px-20 py-3 bg-red-600">BG red-600</p>
+                                <p class="px-20 py-3 bg-red-700">BG red-700</p>
+                                <p class="px-20 py-3 bg-red-800">BG red-800</p>
+                                <p class="px-20 py-3 bg-red-900">BG red-900</p>
+                
+                                <p class="px-20 py-3 bg-orange-100">BG orange-100</p>
+                                <p class="px-20 py-3 bg-orange-200">BG orange-200</p>
+                                <p class="px-20 py-3 bg-orange-300">BG orange-300</p>
+                                <p class="px-20 py-3 bg-orange-400">BG orange-400</p>
+                                <p class="px-20 py-3 bg-orange-500">BG orange-500</p>
+                                <p class="px-20 py-3 bg-orange-600">BG orange-600</p>
+                                <p class="px-20 py-3 bg-orange-700">BG orange-700</p>
+                                <p class="px-20 py-3 bg-orange-800">BG orange-800</p>
+                                <p class="px-20 py-3 bg-orange-900">BG orange-900</p>
+                
+                                <p class="px-20 py-3 bg-yellow-100">BG yellow-100</p>
+                                <p class="px-20 py-3 bg-yellow-200">BG yellow-200</p>
+                                <p class="px-20 py-3 bg-yellow-300">BG yellow-300</p>
+                                <p class="px-20 py-3 bg-yellow-400">BG yellow-400</p>
+                                <p class="px-20 py-3 bg-yellow-500">BG yellow-500</p>
+                                <p class="px-20 py-3 bg-yellow-600">BG yellow-600</p>
+                                <p class="px-20 py-3 bg-yellow-700">BG yellow-700</p>
+                                <p class="px-20 py-3 bg-yellow-800">BG yellow-800</p>
+                                <p class="px-20 py-3 bg-yellow-900">BG yellow-900</p>
+                
+                                <p class="px-20 py-3 bg-green-100">BG green-100</p>
+                                <p class="px-20 py-3 bg-green-200">BG green-200</p>
+                                <p class="px-20 py-3 bg-green-300">BG green-300</p>
+                                <p class="px-20 py-3 bg-green-400">BG green-400</p>
+                                <p class="px-20 py-3 bg-green-500">BG green-500</p>
+                                <p class="px-20 py-3 bg-green-600">BG green-600</p>
+                                <p class="px-20 py-3 bg-green-700">BG green-700</p>
+                                <p class="px-20 py-3 bg-green-800">BG green-800</p>
+                                <p class="px-20 py-3 bg-green-900">BG green-900</p>
+                
+                                <p class="px-20 py-3 bg-teal-100">BG teal-100</p>
+                                <p class="px-20 py-3 bg-teal-200">BG teal-200</p>
+                                <p class="px-20 py-3 bg-teal-300">BG teal-300</p>
+                                <p class="px-20 py-3 bg-teal-400">BG teal-400</p>
+                                <p class="px-20 py-3 bg-teal-500">BG teal-500</p>
+                                <p class="px-20 py-3 bg-teal-600">BG teal-600</p>
+                                <p class="px-20 py-3 bg-teal-700">BG teal-700</p>
+                                <p class="px-20 py-3 bg-teal-800">BG teal-800</p>
+                                <p class="px-20 py-3 bg-teal-900">BG teal-900</p>
+                
+                                <p class="px-20 py-3 bg-blue-100">BG blue-100</p>
+                                <p class="px-20 py-3 bg-blue-200">BG blue-200</p>
+                                <p class="px-20 py-3 bg-blue-300">BG blue-300</p>
+                                <p class="px-20 py-3 bg-blue-400">BG blue-400</p>
+                                <p class="px-20 py-3 bg-blue-500">BG blue-500</p>
+                                <p class="px-20 py-3 bg-blue-600">BG blue-600</p>
+                                <p class="px-20 py-3 bg-blue-700">BG blue-700</p>
+                                <p class="px-20 py-3 bg-blue-800">BG blue-800</p>
+                                <p class="px-20 py-3 bg-blue-900">BG blue-900</p>
+                
+                                <p class="px-20 py-3 bg-indigo-100">BG indigo-100</p>
+                                <p class="px-20 py-3 bg-indigo-200">BG indigo-200</p>
+                                <p class="px-20 py-3 bg-indigo-300">BG indigo-300</p>
+                                <p class="px-20 py-3 bg-indigo-400">BG indigo-400</p>
+                                <p class="px-20 py-3 bg-indigo-500">BG indigo-500</p>
+                                <p class="px-20 py-3 bg-indigo-600">BG indigo-600</p>
+                                <p class="px-20 py-3 bg-indigo-700">BG indigo-700</p>
+                                <p class="px-20 py-3 bg-indigo-800">BG indigo-800</p>
+                                <p class="px-20 py-3 bg-indigo-900">BG indigo-900</p>
+                
+                                <p class="px-20 py-3 bg-purple-100">BG purple-100</p>
+                                <p class="px-20 py-3 bg-purple-200">BG purple-200</p>
+                                <p class="px-20 py-3 bg-purple-300">BG purple-300</p>
+                                <p class="px-20 py-3 bg-purple-400">BG purple-400</p>
+                                <p class="px-20 py-3 bg-purple-500">BG purple-500</p>
+                                <p class="px-20 py-3 bg-purple-600">BG purple-600</p>
+                                <p class="px-20 py-3 bg-purple-700">BG purple-700</p>
+                                <p class="px-20 py-3 bg-purple-800">BG purple-800</p>
+                                <p class="px-20 py-3 bg-purple-900">BG purple-900</p>
+                
+                                <p class="px-20 py-3 bg-pink-100">BG pink-100</p>
+                                <p class="px-20 py-3 bg-pink-200">BG pink-200</p>
+                                <p class="px-20 py-3 bg-pink-300">BG pink-300</p>
+                                <p class="px-20 py-3 bg-pink-400">BG pink-400</p>
+                                <p class="px-20 py-3 bg-pink-500">BG pink-500</p>
+                                <p class="px-20 py-3 bg-pink-600">BG pink-600</p>
+                                <p class="px-20 py-3 bg-pink-700">BG pink-700</p>
+                                <p class="px-20 py-3 bg-pink-800">BG pink-800</p>
+                                <p class="px-20 py-3 bg-pink-900">BG pink-900</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tabs-tailwind-borders" role="tabpanel" >
+                            <div class="border-concepts my-10">
+                                <p class="px-20 bg-purple-200 py-3 border-solid border-teal border-4 mb-4">border solid</p>
+                                <p class="px-20 bg-purple-300 py-3 border-dotted border-teal border-4 mb-4">border dotted</p>
+                                <p class="px-20 bg-purple-300 py-3 border-double border-4 mb-4">border double</p>
+                                <div class="grid grid-cols-4 divide-x-2 divide-red-300 my-4">
+                                    <div class="text-center">1</div>
+                                    <div class="text-center">2</div>
+                                    <div class="text-center">3</div>
+                                    <div class="text-center">4</div>
+                                </div>
+                                <div class="mt-8">
+                                    <span class="bg-teal-200 p-5 rounded-2xl">Border Rounded</span>
+                                    <span class="bg-teal-200 p-5 rounded-3xl">Border Rounded</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tabs-tailwind-display" role="tabpanel" >
+                            <div class="display-concept my-10">
+                                <span class="block mt-2 bg-yellow-200 p-4">Span Tag using block property</span>
+                                <span class="block mt-2 bg-yellow-200 p-4">Span Tag using block property</span>
+                
+                                <div class="mt-4">
+                                    <div class="inline bg-teal-400 p-2">div Using inline property</div>
+                                    <div class="inline bg-teal-400 p-2">div Using inline property</div>
+                                </div>
+                
+                                <div class="mt-4">
+                                    <p class="font-black mb-2">display grid</p>
+                                    <div class="bg-gray-400 p-2 grid gap-2 grid-cols-2">
+                                        <div class="bg-teal-400">One</div>
+                                        <div class="bg-teal-400">Two</div>
+                                        <div class="bg-teal-400">Three</div>
+                                        <div class="bg-teal-400">Four</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tabs-tailwind-margin" role="tabpanel" >
+                            <div class="margin-concept my-10">
+                                <div class="bg-yellow-200 h-auto">
+                                    <p class="font-black">Margins</p>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-1"> Margin unit top 1</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-2"> Margin unit top 2</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-3"> Margin unit top 3</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-4"> Margin unit top 4</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-5"> Margin unit top 5</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-6"> Margin unit top 6</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-8"> Margin unit top 8</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-10"> Margin unit top 10</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-12"> Margin unit top 12</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-16"> Margin unit top 16</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-20"> Margin unit top 20</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-24"> Margin unit top 24</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-32"> Margin unit top 32</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-40"> Margin unit top 40</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-48"> Margin unit top 48</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-56"> Margin unit top 56</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 mt-64"> Margin unit top 64</span></span>
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="tab-pane fade" id="tabs-tailwind-padding" role="tabpanel" >
+                            <div class="padding-concept my-10">
+                                <div class="bg-yellow-200 h-auto">
+                                    <p class="font-black">Paddings</p>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-1">Padding unit top 1</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-2">Padding unit top 2</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-3">Padding unit top 3</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-4">Padding unit top 4</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-5">Padding unit top 5</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-6">Padding unit top 6</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-8">Padding unit top 8</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-10">Padding unit top 10</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-12">Padding unit top 12</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-16">Padding unit top 16</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-20">Padding unit top 20</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-24">Padding unit top 24</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-32">Padding unit top 32</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-40">Padding unit top 40</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-48">Padding unit top 48</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-56">Padding unit top 56</span></span>
+                                    <span class="bg-yellow-400 h-auto inline-block mb-3"><span class="inline-block bg-purple-400 pt-64">Padding unit top 64</span></span>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="tab-pane fade" id="tabs-tailwind-shadow" role="tabpanel" >
+                            <div class="shadow-concept my-10">
+                                <p class="font-bold">Shadow</p>
+                                <p class="bg-pink-100 shadow-xs mb-4">shadow xs</p>
+                                <p class="bg-pink-100 shadow-sm mb-4">shadow sm</p>
+                                <p class="bg-pink-100 shadow mb-4">shadow</p>
+                                <p class="bg-pink-100 shadow-md mb-4">shadow-md</p>
+                                <p class="bg-pink-100 shadow-lg mb-4">shadow-lg</p>
+                                <p class="bg-pink-100 shadow-xl mb-4">shadow-xl</p>
+                                <p class="bg-pink-100 shadow-2xl mb-4">shadow-2xl</p>
+                                <p class="bg-pink-100 shadow-inner mb-4">shadow-inner</p>
+                                <p class="bg-pink-100 shadow-outline mb-4">shadow-outline</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tabs-tailwind-text" role="tabpanel" >
+                            <div class="text-concept my-10">
+                                <p class="font-black">Text</p>
+                                <p class="text-black text-opacity-0">Text Opacity 0</p>
+                                <p class="text-black text-opacity-25">Text Opacity 25</p>
+                                <p class="text-black text-opacity-50">Text Opacity 50</p>
+                                <p class="text-black text-opacity-75">Text Opacity 75</p>
+                                <p class="text-black text-opacity-100">Text Opacity 100</p>
+                
+                                <p class="uppercase">Text uppercase</p>
+                                <p class="lowercase">Text lowercase</p>
+                                <p class="capitalize">Text capitalize</p>
+                                
+                                <p class="underline">Text underline</p>
+                                <p class="line-through">Text line-through</p>
+                                <p class="no-underline">Text no-underline</p>
+                                
+                                <p class="font-hairline">Font hairline</p>
+                                <p class="font-thin">Font thin</p>
+                                <p class="font-light">Font light</p>
+                                <p class="font-normal">Font normal</p>
+                                <p class="font-medium">Font medium</p>
+                                <p class="font-semibold">Font semibold</p>
+                                <p class="font-bold">Font bold</p>
+                                <p class="font-extrabold">Font extrabold</p>
+                                <p class="font-black">Font black</p>
+                
+                                <p class="text-xs">Text xs</p>
+                                <p class="text-sm">Text sm</p>
+                                <p class="text-base">Text base</p>
+                                <p class="text-lg">Text lg</p>
+                                <p class="text-xl">Text xl</p>
+                                <p class="text-2xl">Text 2xl</p>
+                                <p class="text-3xl">Text 3xl</p>
+                                <p class="text-4xl">Text 4xl</p>
+                                <p class="text-5xl">Text 5xl</p>
+                                <p class="text-6xl">Text 6xl</p>
+                
+                                <p class="text-left">Text left</p>
+                                <p class="text-center">Text center</p>
+                                <p class="text-right">Text right</p>
+                                <p class="italic">Text italic</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tabs-tailwind-position" role="tabpanel" >
+                            <p class="font-bold mb-5">Tailwind Positions</p>
+                            <div class="card h-96 w-96 relative">
+                                <p class="absolute top-0 left-0">top left</p>
+                                <p class="absolute top-0 right-0">top right</p>
+                                <p class="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2">Center</p>
+                                <p class="absolute bottom-0 right-0">bottom right</p>
+                                <p class="absolute bottom-0 left-0">bottom left</p>
+                                <p class="fixed bottom-10 right-10">Position fixed</p>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tabs-tailwind-z-index" role="tabpanel" >
+                            <p class="font-bold mb-5">Tailwind z-index</p>
+                            <div class="card h-96 w-96">
+                                <div class="relative">
+                                    <div class="z-auto absolute t-0 l-0 ml-10 mt-10 bg-teal-800 h-20 w-20"></div>
+                                    <div class="z-40 absolute t-0 l-0 ml-0 mt-0 bg-teal-300 h-20 w-20"></div>
+                                    <div class="z-30 absolute t-0 l-0 ml-2 mt-2 bg-teal-400 h-20 w-20"></div>
+                                    <div class="z-20 absolute t-0 l-0 ml-4 mt-4 bg-teal-500 h-20 w-20"></div>
+                                    <div class="z-10 absolute t-0 l-0 ml-6 mt-6 bg-teal-600 h-20 w-20"></div>
+                                    <div class="z-0 absolute t-0 l-0 ml-8 mt-8 bg-teal-700 h-20 w-20"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="tabs-tailwind-width" role="tabpanel" >
+                            <p class="font-bold mb-5">Tailwind Width</p>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">w-1</span>
+                                <div class="h-14 w-1 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">w-1.5</span>
+                                <div class="h-14 w-1.5 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">w-2</span>
+                                <div class="h-14 w-2 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">w-2.5</span>
+                                <div class="h-14 w-2.5 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">w-3</span>
+                                <div class="h-14 w-3 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">w-3.5</span>
+                                <div class="h-14 w-3.5 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">w-4</span>
+                                <div class="h-14 w-4 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">w-5</span>
+                                <div class="h-14 w-5 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">w-6</span>
+                                <div class="h-14 w-6 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">w-8</span>
+                                <div class="h-14 w-8 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">w-10</span>
+                                <div class="h-14 w-10 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">w-11</span>
+                                <div class="h-14 w-11 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">w-12</span>
+                                <div class="h-14 w-12 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">w-14</span>
+                                <div class="h-14 w-14 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">w-16</span>
+                                <div class="h-14 w-16 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">w-20</span>
+                                <div class="h-14 w-20 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">w-24</span>
+                                <div class="h-14 w-24 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">w-28</span>
+                                <div class="h-14 w-28 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">w-32</span>
+                                <div class="h-14 w-32 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">w-36</span>
+                                <div class="h-14 w-36 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">w-40</span>
+                                <div class="h-14 w-40 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">w-44</span>
+                                <div class="h-14 w-44 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">w-48</span>
+                                <div class="h-14 w-48 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">w-52</span>
+                                <div class="h-14 w-52 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">w-56</span>
+                                <div class="h-14 w-56 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">w-64</span>
+                                <div class="h-14 w-64 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">w-72</span>
+                                <div class="h-14 w-72 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">w-80</span>
+                                <div class="h-14 w-80 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">w-96</span>
+                                <div class="h-14 w-96 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                        </div>
+                        <div class="tab-pane fade" id="tabs-tailwind-height" role="tabpanel" >
+                            <p class="font-bold mb-5">Tailwind Height</p>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">h-1</span>
+                                <div class="w-14 h-1 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">h-1.5</span>
+                                <div class="w-14 h-1.5 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">h-2</span>
+                                <div class="w-14 h-2 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">h-2.5</span>
+                                <div class="w-14 h-2.5 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">h-3</span>
+                                <div class="w-14 h-3 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">h-3.5</span>
+                                <div class="w-14 h-3.5 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">h-4</span>
+                                <div class="w-14 h-4 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">h-5</span>
+                                <div class="w-14 h-5 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">h-6</span>
+                                <div class="w-14 h-6 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">h-8</span>
+                                <div class="w-14 h-8 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">h-10</span>
+                                <div class="w-14 h-10 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">h-11</span>
+                                <div class="w-14 h-11 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">h-12</span>
+                                <div class="w-14 h-12 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">h-14</span>
+                                <div class="w-14 h-14 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">h-16</span>
+                                <div class="w-14 h-16 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">h-20</span>
+                                <div class="w-14 h-20 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">h-24</span>
+                                <div class="w-14 h-24 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">h-28</span>
+                                <div class="w-14 h-28 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">h-32</span>
+                                <div class="w-14 h-32 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">h-36</span>
+                                <div class="w-14 h-36 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">h-40</span>
+                                <div class="w-14 h-40 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">h-44</span>
+                                <div class="w-14 h-44 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">h-48</span>
+                                <div class="w-14 h-48 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">h-52</span>
+                                <div class="w-14 h-52 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <span class="mr-2">h-56</span>
+                                <div class="w-14 h-56 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">h-64</span>
+                                <div class="w-14 h-64 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">h-72</span>
+                                <div class="w-14 h-72 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">h-80</span>
+                                <div class="w-14 h-80 bg-teal-700 mt-4"></div>
+                            </div>
+
+                            <div class="flex items-center">
+                                <span class="mr-2">h-96</span>
+                                <div class="w-14 h-96 bg-teal-700 mt-4"></div>
+                            </div>
+                            
+                        </div>
+                        <div class="tab-pane fade" id="tabs-tailwind-demo" role="tabpanel" >
+                            <div class="flex flex-wrap">
+                                <div class="card p-4 w-1/3">
+                                    <p class="font-bold mb-5 text-xl">Tailwind Concepts</p>
+                                    <div class="card border-2 border-solid border-black p-4">
+                                        <img src="./images/tailwind-concepts.png" alt="">
+                                        <div class="card-body mt-5">
+                                            <p class="text-xl mb-3">Tailwind Concepts</p>
+                                            <a href="http://tailwind-css-concept.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn px-4 py-2 rounded inline-block">Click Here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card p-4 w-1/3">
+                                    <p class="font-bold mb-5 text-xl">Tailwind Banner Demo</p>
+                                    <div class="card border-2 border-solid border-black p-4">
+                                        <img src="./images/tailwind-banner.png" alt="">
+                                        <div class="card-body mt-5">
+                                            <p class="text-xl mb-3">Tailwind Concepts</p>
+                                            <a href="http://tailwind-demo-1.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn px-4 py-2 rounded inline-block">Click Here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card p-4 w-1/3">
+                                    <p class="font-bold mb-5 text-xl">Tailwind Demo</p>
+                                    <div class="card border-2 border-solid border-black p-4">
+                                        <img src="./images/tailwind-demo-1.png" alt="">
+                                        <div class="card-body mt-5">
+                                            <p class="text-xl mb-3">Tailwind CSS Demo 1</p>
+                                            <a href="http://tailwind-demo-2.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn px-4 py-2 rounded inline-block">Click Here</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+
+                           
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./CSS/style.css">
+
+  <!-- js link -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <title>HTML - Task Panel</title>
+</head>
+
+<body>
+  <!-- header -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <!-- <a class="navbar-brand nav-logo" href="#">SH</a> -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="http://task-panel.shraddha.gediya.radixusers3.com/html.html"
+              target="_blank">HTML</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://task-panel.shraddha.gediya.radixusers3.com/css.html"
+              target="_blank">CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://task-panel.shraddha.gediya.radixusers3.com/bootstrap.html"
+              target="_blank">Bootstrap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://task-panel.shraddha.gediya.radixusers3.com/tailwind.html" target="_blank">Tailwind CSS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://task-panel.shraddha.gediya.radixusers3.com/javascript.html">JavaScript</a>
+          </li>
+          <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- main section -->
+  <section class="banner-section">
+
+    <div class="row g-0">
+      <div class="col-3">
+        <div class="side-nav h-100">
+          <ul class="list-unstyled side-nav-ul" id="v-pills-tab" role="tablist">
+            <button class="side-nav-li text-start active" data-bs-toggle="pill" data-bs-target="#v-pills-intro"
+              type="button" role="tab">HTML Intro</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button"
+              role="tab">Pre Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-strong" type="button"
+              role="tab">Strong Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-em" type="button"
+              role="tab">Em Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-small" type="button"
+              role="tab">Small Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-delete" type="button"
+              role="tab">Delete Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-insert" type="button"
+              role="tab">Insert Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-subscripted"
+              type="button" role="tab">Subscripted Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-superscripted"
+              type="button" role="tab">Superscripted Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-blockquote"
+              type="button" role="tab">Blockquote Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-quote" type="button"
+              role="tab">Quote Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-abbr" type="button"
+              role="tab">Abbr Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-address" type="button"
+              role="tab">Address Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-bdo" type="button"
+              role="tab">Bdo Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-cite" type="button"
+              role="tab">Cite Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-code" type="button"
+              role="tab">Code Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-datalist"
+              type="button" role="tab">Datalist Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-detail" type="button"
+              role="tab">Detail Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-fieldset"
+              type="button" role="tab">Fieldset Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-iframe" type="button"
+              role="tab">iFrame Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-mark" type="button"
+              role="tab">Mark Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-meter" type="button"
+              role="tab">Meter Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-span" type="button"
+              role="tab">Span Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-ul-ol" type="button"
+              role="tab">Ul & OL Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-samp" type="button"
+              role="tab">Samp Element</button>
+            <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-demos" type="button"
+              role="tab">HTML Demos</button>
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne" aria-controls="collapseOne">
+                    Form
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-form"
+                      type="button" role="tab">Form Element</button>
+                  </div>
+                </div>
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Table
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-table"
+                      type="button" role="tab">Table Element</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="my-5"></div>
+            <div class="py-5"></div>
+          </ul>
+        </div>
+      </div>
+      <div class="col-9 py-5 px-5">
+        <div class="">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-intro" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">HTML Introduction</p>
+                <p>HTML stands for Hyper Text Markup Language</p>
+                <p>HTML is the standard markup language for creating Web pages</p>
+                <p>HTML describes the structure of a Web page</p>
+                <p>HTML consists of a series of elements</p>
+                <p>HTML elements tell the browser how to display the content</p>
+                <p>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a
+                  link", etc.</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <div class="use-of-pre">
+                  <p class="fw-bold h5">Use of Pre Element</p>
+                  <pre>
+                                    Lorem ipsum dolor sit amet.
+                                    Lorem, ipsum dolor sit amet consectetur elit.
+                                    Lorem ipsum dolor sit amet.
+                                    Lorem ipsum dolor sit.
+                                </pre>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-strong" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of Strong Element</p>
+                <p>Lorem ipsum dolor sit amet consectetur, <strong>Strong</strong> adipisicing elit. Sit odit, dolores
+                  repellat reiciendis dolore nobis!</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-em" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of em Element</p>
+                <p>Lorem ipsum dolor sit amet consectetur, <em>em adipisicing elit. </em>Sit odit, dolores repellat
+                  reiciendis dolore nobis!</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-small" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of small Element</p>
+                <p>Lorem ipsum dolor sit amet consectetur, <small>small adipisicing elit. Sit odit,</small> dolores
+                  repellat reiciendis dolore nobis!</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-delete" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of delete Element</p>
+                <p>Lorem ipsum dolor sit amet consectetur, <del>delete</del> adipisicing elit. Sit odit, dolores
+                  repellat reiciendis dolore nobis!</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-insert" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of insert Element</p>
+                <p>Lorem ipsum dolor sit amet consectetur, <ins>insert</ins> adipisicing elit. Sit odit, dolores
+                  repellat reiciendis dolore nobis!</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-subscripted" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of subscripted Element</p>
+                <p>Lorem ipsum dolor sit amet consectetur, <sub>subscripted</sub> adipisicing elit. Sit odit, dolores
+                  repellat reiciendis dolore nobis!</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-superscripted" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of superscripted Element</p>
+                <p>Lorem ipsum dolor sit amet consectetur, <sup>superscripted</sup> adipisicing elit. Sit odit, dolores
+                  repellat reiciendis dolore nobis!</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-blockquote" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of blockquote Element</p>
+                <blockquote>
+                  For 50 years, WWF has been protecting the future of nature. The world's leading conservation
+                  organization, WWF works in 100 countries and is supported by 1.2 million members in the United States
+                  and close to 5 million globally.
+                </blockquote>
+                <small class="text-danger">Because of bootstrap usage bloackquote not working in custom <span
+                    class="fw-bold">when you use bloackquote by default it's take margin from right 1em</span></small>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-quote" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of quote Element</p>
+                <p>Lorem ipsum dolor sit amet consectetur, <q>quote</q> adipisicing elit. Sit odit, dolores repellat
+                  reiciendis dolore nobis!</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-abbr" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of abbr Element</p>
+                <p>Lorem ipsum dolor sit amet consectetur, <abbr title="abbr">abbr</abbr> adipisicing elit. Sit odit,
+                  dolores repellat reiciendis dolore nobis!</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-address" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of abbr Element</p>
+                <address>
+                  Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+                  Visit us at:<br>
+                  Example.com<br>
+                  Box 564, Disneyland<br>
+                  USA
+                </address>
+                <small class="text-danger">if you use address element while use of bootstrap it's not work <span
+                    class="fw-bold">by default it's font-style will be italic</span> </small>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-bdo" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of bdo Element</p>
+                <p>This paragraph will go left-to-right.</p>
+                <p><bdo dir="rtl">This paragraph will go right-to-left.</bdo></p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-cite" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of bdo Element</p>
+                <p><cite>Lorem, ipsum.</cite> Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-code" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of Code Element</p>
+                <p><code>Lorem, ipsum.</code> Lorem ipsum dolor sit amet.</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-datalist" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of Datalist Element</p>
+                <label for="browser">Datalist Options:</label>
+                <input list="browsers" name="browser" id="browser">
+
+                <datalist id="browsers">
+                  <option value="option 1">
+                  <option value="option 2">
+                  <option value="option 3">
+                  <option value="option 4">
+                  <option value="option 5">
+                </datalist>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-detail" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of Detail Element</p>
+                <details>
+                  <summary>Click here</summary>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, neque.</p>
+                </details>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-fieldset" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of Fieldset Element</p>
+                <form action="/action_page.php">
+                  <fieldset>
+                    <legend>Personalia:</legend>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"><br><br>
+                    <label for="lname">Last name:</label>
+                    <input type="text" id="lname" name="lname"><br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday"><br><br>
+                    <input type="submit" value="Submit">
+                  </fieldset>
+                </form>
+                <small class="fw-bold text-danger">In bootstrap fieldset border not working</small>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-iframe" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of iFrame Element</p>
+                <iframe src="https://getbootstrap.com/docs/5.2/content/reboot/#address"
+                  title="W3Schools Free Online Web Tutorials">
+                </iframe>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-mark" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of Mark Element</p>
+                <p>Lorem ipsum dolor, <mark>milk</mark> sit amet consectetur adipisicing elit. Explicabo, maxime!</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-meter" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of Meter Element</p>
+                <meter id="disk_d" value="0.6">60%</meter>
+                <small>type of progress bar</small>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-span" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of span Element</p>
+                <p>Lorem ipsum dolor sit amet, <span class="border fw-bold p-2">span element</span> consectetur
+                  adipisicing elit. Officia, eveniet!</p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-table" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of Table Element</p>
+                <div class="table-element">
+                  <table class="table-main">
+                    <tr>
+                      <th class="px-2">Header 1</th>
+                      <th class="px-2">Header 2</th>
+                      <th class="px-2">Header 2</th>
+                    </tr>
+                    <tr>
+                      <td class="text-center">TR 2 TD 1</td>
+                      <td class="text-center">TR 2 TD 2</td>
+                      <td class="text-center">TR 2 TD 3</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">TR 3 TD 1</td>
+                      <td class="text-center">TR 3 TD 2</td>
+                      <td class="text-center">TR 3 TD 3</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center" rowspan="2">Rowspan</td>
+                      <td class="text-center" colspan="2">Colspan</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center">TR 3 TD 1</td>
+                      <td class="text-center">TR 3 TD 2</td>
+                    </tr>
+                  </table>
+                </div>
+
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-ul-ol" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of Ul and Ol Element</p>
+                <div class="ul-ol-style mt-4">
+                  <div class="d-flex ">
+                    <div class="ol-type">
+                      <p class="fw-bold mb-0">OL type</p>
+                      <ol type="1">
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                      </ol>
+                      <ol type="A">
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                      </ol>
+                    </div>
+                    <div class="ul-type ms-5">
+                      <p class="fw-bold mb-0">UL type</p>
+                      <ul style="list-style-type : circle">
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                      </ul>
+                      <ul style="list-style-type : square">
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-samp" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of Samp Element</p>
+                <p class="mb-0">The samp element is used to define sample output from a computer program.</p>
+                <p><samp>File not found.<br>Press F1 to continue</samp></p>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-form" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">Use of Form Element</p>
+                <div class="form-element">
+                  <p class="fw-bold mb-0 mt-2">label element</p>
+                  <label for="fname">First name:</label>
+                  <input type="text" id="fname" name="fname">
+
+
+                  <p class="mb-0 mt-2 fw-bold">Select element</p>
+                  <label for="cars">Select option:</label>
+                  <select id="cars" name="cars">
+                    <option value="option 1">option 1</option>
+                    <option value="option 2">option 2</option>
+                    <option value="option 3">option 3</option>
+                    <option value="option 4">option 4</option>
+                  </select>
+
+                  <p class="mb-0 mt-2 fw-bold ">textarea element</p>
+                  <textarea name="message" rows="10" cols="40">Lorem ipsum dolor sit.</textarea>
+
+
+                  <p class="mb-0 mt-2 fw-bold">Fieldset and legend</p>
+
+                  <fieldset>
+                    <legend>Personalia:</legend>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname" value="John"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    <input type="submit" value="Submit">
+                  </fieldset>
+                  <small>In bootstrap fieldset border not working</small>
+
+
+                  <p class="mb-0 mt-2 fw-bold">Datalist element</p>
+                  <input list="browsers" placeholder="datalist">
+                  <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                  </datalist>
+
+
+                  <p> class="input-attribute-element mt-4">
+                  <p class="fw-bold mb-0">input attributes</p>
+                  <input type="text" placeholder="text" class="d-block mt-2">
+                  <input type="email" placeholder="email" class="d-block mt-2">
+                  <p class="mb-0 mt-2">
+                    <input type="checkbox"><label for="checkbox">checkbox 1</label>
+                    <input type="checkbox"><label for="checkbox 2">checkbox 2</label>
+                  </p>
+                  <p class="mb-0 mt-2"><input type="color"><label for="selectcolor" class="ms-2">Select color</label>
+                  </p>
+
+                  <p class="mb-0 mt-2"><input type="date"></p>
+
+                  <p class="mb-0 mt-2"><input type="datetime-local"></p>
+
+                  <p class="mb-0 mt-2"><input type="file"></p>
+
+                  <p class="mb-0 mt-2"><input type="month"> <label for="month">Select Month</label></p>
+
+                  <p class="mb-0 mt-2"><input type="number" placeholder="select number"> <label for="number">Select
+                      number</label></p>
+
+                  <p class="mb-0 mt-2"><input type="password" placeholder="password"> <label for="password">Input type
+                      Password</label></p>
+
+                  <p class="mb-0 mt-2"><input type="tel" placeholder="Mobile No"> <label for="tel">Input type Mobile
+                      No.</label></p>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-demos" role="tabpanel" tabindex="0">
+              <div class="card html-card rounded-0 shadow-sm p-4">
+                <p class="fw-bold h5">HTML Demos</p>
+                <div class="row">
+                  <div class="col-lg-4 mt-3">
+                    <div class="card demo-detail-card">
+                      <img src="./images/task-1.png" class="card-img-top p-1" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">HTML Demo 1</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="http://html-demo.shraddha.gediya.radixusers3.com/" target="_blank"
+                          class="btn theme-btn">Click Here</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-3">
+                    <div class="card demo-detail-card">
+                      <img src="./images/task-2.png" class="card-img-top p-1" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">HTML Demo 2</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="http://table-demo-2.shraddha.gediya.radixusers3.com/" target="_blank"
+                          class="btn theme-btn">Click Here</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-3">
+                    <div class="card demo-detail-card">
+                      <img src="./images/task-3.png" class="card-img-top p-1" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">HTML Demo 3</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="http://r-table-demo.shraddha.gediya.radixusers3.com/" target="_blank"
+                          class="btn theme-btn">Click Here</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-3">
+                    <div class="card demo-detail-card">
+                      <img src="./images/task-4.png" class="card-img-top p-1" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">HTML Demo 4</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="http://mega-menu.shraddha.gediya.radixusers3.com/" target="_blank"
+                          class="btn theme-btn">Click Here</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-3">
+                    <div class="card demo-detail-card">
+                      <img src="./images/task-5.png" class="card-img-top p-1" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">HTML Demo 5</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="http://tab-accordion.shraddha.gediya.radixusers3.com/" target="_blank"
+                          class="btn theme-btn">Click Here</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-3">
+                    <div class="card demo-detail-card">
+                      <img src="./images/html-exercise-1.png" class="card-img-top p-1" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">HTML Exercise 1</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="http://html-exercise-1.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-3">
+                    <div class="card demo-detail-card">
+                      <img src="./images/html-exercise-2.png" class="card-img-top p-1" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">HTML Exercise 2</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="http://html-exercise-2.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-3">
+                    <div class="card demo-detail-card">
+                      <img src="./images/html-exercise-3.png" class="card-img-top p-1" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">HTML Exercise 3</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="http://html-exercise-3.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-3">
+                    <div class="card demo-detail-card">
+                      <img src="./images/html-exercise-4.png" class="card-img-top p-1" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">HTML Exercise 4</h5>
+                        <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                        <a href="http://html-exercise-4.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </section>
+
+
+</body>
+
+</html>

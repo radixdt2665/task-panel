@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- js link -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    <title>Bootstrap - Task Panel</title>
+</head>
+<body>
+    <!-- header -->
+    <nav class="navbar navbar-expand-lg custom-navbar">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand nav-logo" href="#">SH</a> -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="http://task-panel.shraddha.gediya.radixusers3.com/html.html" target="_blank">HTML</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://task-panel.shraddha.gediya.radixusers3.com/css.html">CSS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://task-panel.shraddha.gediya.radixusers3.com/bootstrap.html">Bootstrap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://task-panel.shraddha.gediya.radixusers3.com/tailwind.html" target="_blank">Tailwind CSS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://task-panel.shraddha.gediya.radixusers3.com/javascript.html">JavaScript</a>
+              </li>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li> -->
+              
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- main section -->
+    <section class="banner-section bootstrap-file">
+        
+        <div class="row g-0">
+            <div class="col-3">
+                <div class="side-nav h-100">
+                    <ul class="list-unstyled side-nav-ul" id="v-pills-tab" role="tablist" >
+                        <button class="side-nav-li text-start active" data-bs-toggle="pill" data-bs-target="#v-pills-intro" type="button" role="tab">Bootstrap Intro</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-colors" type="button" role="tab">Bootstrap Colors</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-sizing" type="button" role="tab">Bootstrap Sizing</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-shadow" type="button" role="tab">Bootstrap Shadow</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-display" type="button" role="tab">Bootstrap Display</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-strech-link" type="button" role="tab">Bootstrap Strech Link</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-aspect-ratio" type="button" role="tab">Bootstrap Aspect Ratio</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-toast" type="button" role="tab">Bootstrap Toast</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-scrollspy" type="button" role="tab">Bootstrap Scrollspy</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-nav-tab" type="button" role="tab">Bootstrap Nav & Tabs</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-navbar" type="button" role="tab">Bootstrap Navbar</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-modal" type="button" role="tab">Bootstrap Modal</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-dropdown" type="button" role="tab">Bootstrap Dropdown</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-toggle" type="button" role="tab">Bootstrap Toggle</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-card" type="button" role="tab">Bootstrap Card</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-btn-size" type="button" role="tab">Bootstrap Button Grouping</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-btn" type="button" role="tab">Bootstrap Button</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-alert" type="button" role="tab">Bootstrap Alert</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-accordion" type="button" role="tab">Bootstrap Accordion</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-form-element" type="button" role="tab">Bootstrap Form Elements</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-table" type="button" role="tab">Bootstrap Table</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-offset" type="button" role="tab">Bootstrap Offset</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-blockquote" type="button" role="tab">Bootstrap Blockquote</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-row-column" type="button" role="tab">Bootstrap Row & Column</button>
+                        <button class="side-nav-li text-start" data-bs-toggle="pill" data-bs-target="#v-pills-demos" type="button" role="tab">Bootstrap Demos</button>
+                        <div class="my-5"></div>
+                        <div class="py-5"></div>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-9 py-5 pe-5">
+                <div class="">
+                    <div class="tab-content" id="v-pills-tabContent">
+                        <div class="tab-pane fade show active" id="v-pills-intro" role="tabpanel"  tabindex="0"> 
+                            <div class="card css-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5">Bootstrap Introduction</p>
+                                <p>Bootstrap is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.</p>
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-colors" role="tabpanel"  tabindex="0">
+                            <div class="card rounded-0 shadow-sm p-4">
+                                <div class="use-of-pre">
+                                    <p class="fw-bold h5">Bootstrap Colors</p>
+                                    <div class="bootstrap-colors">
+                                        <p class="fw-bold mb-3">Colors</p>
+                                         <div class="text-white bg-primary p-3">Primary with contrasting color</div>
+                                         <div class="text-white bg-secondary p-3">Secondary with contrasting color</div>
+                                         <div class="text-white bg-success p-3">Success with contrasting color</div>
+                                         <div class="text-white bg-danger p-3">Danger with contrasting color</div>
+                                         <div class="text-white bg-warning p-3">Warning with contrasting color</div>
+                                         <div class="text-white bg-info p-3">Info with contrasting color</div>
+                                         <div class="text-dark bg-light p-3">Light with contrasting color</div>
+                                         <div class="text-white bg-dark p-3">Dark with contrasting color</div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-sizing" role="tabpanel"  tabindex="0">
+                            <div class="card sizing-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Sizing</p>
+                                <div class="sizing-property">
+                                    <div class="w-25 p-3" style="background-color: #eee;">Width 25%</div>
+                                    <div class="w-50 p-3" style="background-color: #eee;">Width 50%</div>
+                                    <div class="w-75 p-3" style="background-color: #eee;">Width 75%</div>
+                                    <div class="w-100 p-3" style="background-color: #eee;">Width 100%</div>
+                                    <div class="w-auto p-3" style="background-color: #eee;">Width auto</div>
+                    
+                                    <div style="height: 100px; background-color: rgba(255,0,0,0.1);" class="mt-4">
+                                        <div class="h-25 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+                                        <div class="h-50 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+                                        <div class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+                                        <div class="h-100 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+                                        <div class="h-auto d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height auto</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-shadow" role="tabpanel"  tabindex="0">
+                            <div class="card html-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5">Bootstrap Shadow</p>
+                                <div class="shadow-property">
+                                    <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+                                    <div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+                                    <div class="shadow p-3 mb-5 bg-body rounded">Regular shadow</div>
+                                    <div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-display" role="tabpanel"  tabindex="0">
+                            <div class="card html-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5">Bootstrap Display Property</p>
+                                <div class="display-element my-3">
+                                     <div class="d-inline p-2 text-white bg-primary">d-inline</div>
+                                     <div class="d-inline p-2 text-white bg-dark">d-inline</div>
+                                     <div class="d-block p-2 mt-3 text-white bg-primary">d-block</div>
+                                     <div class="d-block p-2 text-white bg-dark">d-block</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-strech-link" role="tabpanel"  tabindex="0">
+                            <div class="stretch-link-card rounded-0 shadow-sm p-4 position-relative">
+                                <p class="fw-bold h5">Bootstrap Strech Link</p>
+                                <div class="stretched-link mt-3">
+                                    <div class="card" style="width: 18rem;">
+                                         <img src="./images/location-img.jpg" class="card-img-top" alt="...">
+                                         <div class="card-body">
+                                             <h5 class="card-title">Card with stretched link</h5>
+                                             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                             <a href="#" class="btn btn-primary stretched-link">Go somewhere</a>
+                                         </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-aspect-ratio" role="tabpanel"  tabindex="0">
+                            <div class="card html-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Aspect Ratio</p>
+                                <div class="aspect-ratio-element">
+                                    <div class="d-flex">
+                                        <div class="ratio ratio-1x1">
+                                            <div>1x1</div>
+                                        </div>
+                                        <div class="ratio ratio-4x3">
+                                            <div>4x3</div>
+                                        </div>
+                                        <div class="ratio ratio-16x9">
+                                            <div>16x9</div>
+                                        </div>
+                                        <div class="ratio ratio-21x9">
+                                            <div>21x9</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-toast" role="tabpanel"  tabindex="0">
+                            <div class="card html-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Toast</p>
+                                <div class="toast-element">
+                                    <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+                     
+                                     <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                         <div id="liveToast" class="toast fade hide" role="alert" aria-live="assertive" aria-atomic="true">
+                                             <div class="toast-header">
+                                                 <img src="..." class="rounded me-2" alt="...">
+                                                 <strong class="me-auto">Bootstrap</strong>
+                                                 <small>11 mins ago</small>
+                                                 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                                             </div>
+                                             <div class="toast-body">
+                                                 Hello, world! This is a toast message.
+                                             </div>
+                                         </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-scrollspy" role="tabpanel"  tabindex="0">
+                            <div class="card html-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Scrollspy</p>
+                                <div class="my-5"></div>
+                                <div class="py-5"></div>
+                                <div class="my-5"></div>
+                                <div class="py-5"></div>
+                                <div class="my-5"></div>
+                                <div class="py-5"></div>
+                                <div class="my-5"></div>
+                                <div class="py-5"></div>
+                                <div class="scrollspy-element">
+                                    <nav id="navbar-example2" class="navbar bg-light px-3 mb-3">
+                                     <a class="navbar-brand" href="#">Navbar</a>
+                                     <ul class="nav nav-pills">
+                                       <li class="nav-item">
+                                         <a class="nav-link" href="#scrollspyHeading1">First</a>
+                                       </li>
+                                       <li class="nav-item">
+                                         <a class="nav-link" href="#scrollspyHeading2">Second</a>
+                                       </li>
+                                       <li class="nav-item dropdown">
+                                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+                                         <ul class="dropdown-menu">
+                                           <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+                                           <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+                                           <li><hr class="dropdown-divider"></li>
+                                           <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+                                         </ul>
+                                       </li>
+                                     </ul>
+                                   </nav>
+                                   <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+                                     <h4 id="scrollspyHeading1">First heading</h4>
+                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quaerat praesentium? Accusantium eligendi delectus maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cupiditate provident obcaecati reprehenderit ipsam? Eligendi voluptatum quam ipsa aliquam recusandae, tempora eum vel itaque consectetur veniam officiis fugit ab ullam possimus reprehenderit cupiditate maiores, nobis, odio deleniti dolores sed ipsam soluta sint. Repellendus culpa eligendi, adipisci reprehenderit eum et fugiat.</p>
+                                     <h4 id="scrollspyHeading2">Second heading</h4>
+                                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sed, repellat ab eaque obcaecati sunt tenetur? Repellat quod, exercitationem dolor harum, porro tempora, distinctio quidem quo unde odit rerum voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione cupiditate mollitia deserunt vel voluptas voluptate aperiam veritatis rerum, fugit esse optio dignissimos qui quaerat asperiores quibusdam, ea omnis eos tempora sequi beatae id eligendi quae? Eos voluptates vero eius voluptas eveniet, fugiat iste id possimus praesentium maxime? Ipsam, omnis veritatis?</p>
+                                     <h4 id="scrollspyHeading3">Third heading</h4>
+                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident et nulla ratione animi rem, eveniet necessitatibus voluptate assumenda aperiam esse expedita commodi consequatur molestiae blanditiis cum veritatis sequi illo repellendus sit sed fugit, asperiores perspiciatis. Commodi voluptatem ex aut consequuntur odio, fugit eaque adipisci? Quasi eligendi numquam fugit ad recusandae?</p>
+                                     <h4 id="scrollspyHeading4">Fourth heading</h4>
+                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus numquam dolores ipsum tempora et quia hic delectus, esse ullam optio similique error illo harum deserunt necessitatibus dolorem sequi accusamus odio temporibus eaque nostrum nihil. Nihil sint in dolorem omnis ut. At voluptatem magni nulla iste voluptate nam culpa saepe ipsam deserunt soluta, assumenda vitae aliquid quos officia voluptates impedit neque?</p>
+                                     <h4 id="scrollspyHeading5">Fifth heading</h4>
+                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est voluptatibus cum pariatur id dolores laudantium, autem ut voluptates, quam iste quisquam alias dicta velit repudiandae eveniet sint. Omnis, nisi saepe? Ratione est laborum adipisci quisquam a sequi, debitis eos ullam veritatis sapiente provident et quae numquam minus. Nihil praesentium, doloribus doloremque odio corporis minima, iste distinctio hic eum exercitationem molestias aperiam eaque iusto, laudantium sit ab alias iure illo asperiores.</p>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-nav-tab" role="tabpanel"  tabindex="0">
+                            <div class="card tab-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Tabs</p>
+                                <ul class="nav nav-tabs">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Active</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link disabled">Disabled</a>
+                                    </li>
+                                </ul>
+                                <div class="my-5">
+                                    <nav>
+                                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                                        <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false" disabled>Disabled</button>
+                                        </div>
+                                    </nav>
+                                    <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid, veniam?</div>
+                                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">Lorem ipsum dolor sit amet.</div>
+                                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis temporibus dolorum quam magni, optio dolor.</div>
+                                        <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt delectus architecto esse?</div>
+                                    </div>
+                                </div>
+                                <ul class="nav nav-tabs d-none d-lg-flex" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                      <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
+                                    </li>
+                                  </ul>
+                                  <div class="tab-content accordion" id="myTabContent">
+                                    <div class="tab-pane fade show active accordion-item" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+                                  
+                                      <h2 class="accordion-header d-lg-none" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordion Item #1</button>
+                                      </h2>
+                                      <div id="collapseOne" class="accordion-collapse collapse show  d-lg-block" aria-labelledby="headingOne" data-bs-parent="#myTabContent">
+                                        <div class="accordion-body">
+                                          <strong>Home</strong> 
+                                        </div>
+                                      </div>
+                                  
+                                    </div>
+                                    <div class="tab-pane fade accordion-item" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                                      <h2 class="accordion-header d-lg-none" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                          Accordion Item #2
+                                        </button>
+                                      </h2>
+                                      <div id="collapseTwo" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingTwo" data-bs-parent="#myTabContent">
+                                        <div class="accordion-body">
+                                          <strong>Profile</strong>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="tab-pane fade accordion-item" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+                                      <h2 class="accordion-header d-lg-none" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                          Accordion Item #3
+                                        </button>
+                                      </h2>
+                                      <div id="collapseThree" class="accordion-collapse collapse d-lg-block" aria-labelledby="headingThree" data-bs-parent="#myTabContent">
+                                        <div class="accordion-body">
+                                          <strong>Contact</strong>>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-navbar" role="tabpanel"  tabindex="0">
+                            <div class="card html-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5">Bootstrap Navbar</p>
+                                <nav class="navbar navbar-expand-lg bg-light">
+                                    <div class="container-fluid">
+                                      <a class="navbar-brand" href="#">Navbar</a>
+                                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="navbar-toggler-icon"></span>
+                                      </button>
+                                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                          <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                          </li>
+                                          <li class="nav-item">
+                                            <a class="nav-link" href="#">Link</a>
+                                          </li>
+                                          <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                              Dropdown
+                                            </a>
+                                            <ul class="dropdown-menu">
+                                              <li><a class="dropdown-item" href="#">Action</a></li>
+                                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                                              <li><hr class="dropdown-divider"></li>
+                                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                            </ul>
+                                          </li>
+                                          <li class="nav-item">
+                                            <a class="nav-link disabled">Disabled</a>
+                                          </li>
+                                        </ul>
+                                        <form class="d-flex" role="search">
+                                          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                          <button class="btn btn-outline-success" type="submit">Search</button>
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </nav>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-modal" role="tabpanel"  tabindex="0">
+                            <div class="card html-card rounded-0 shadow-sm p-4 d-block">
+                                <p class="fw-bold h5 mb-3">Bootstrap Modal</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    Launch static backdrop modal
+                                </button>
+                                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                ...
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Understood</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                              
+                                
+                                <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          Show a second modal and hide this one with the button below.
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          Hide this modal and show the first with the button below.
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-dropdown" role="tabpanel"  tabindex="0">
+                            <div class="card pseudo-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Dropdown</p>
+                                <div class="dropdown-element">
+                                    <div class="dropdown mt-3">
+                                         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                         Dropdown link
+                                         </a>
+                                     
+                                         <ul class="dropdown-menu">
+                                             <li><a class="dropdown-item" href="#">Action</a></li>
+                                             <li><a class="dropdown-item" href="#">Another action</a></li>
+                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                         </ul>
+                                   </div>
+                                   <!-- Large button groups (default and split) -->
+                                 <div class="btn-group mt-3">
+                                     <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                     Large button With Dark Menu
+                                     </button>
+                                     <ul class="dropdown-menu dropdown-menu-dark">
+                                         <li><a class="dropdown-item" href="#">Action</a></li>
+                                         <li><a class="dropdown-item" href="#">Another action</a></li>
+                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                     </ul>
+                                 </div>
+                                 <div class="btn-group mt-3">
+                                     <button class="btn btn-secondary btn-lg" type="button">
+                                     Large split button
+                                     </button>
+                                     <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                     <span class="visually-hidden">Toggle Dropdown</span>
+                                     </button>
+                                     <ul class="dropdown-menu">
+                                         <li><a class="dropdown-item" href="#">Action</a></li>
+                                         <li><a class="dropdown-item" href="#">Another action</a></li>
+                                         <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                     </ul>
+                                 </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-toggle" role="tabpanel"  tabindex="0">
+                            <div class="card bootstrap-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Toggles</p>
+                                <div class="toggle-element my-5">
+                                    <p class="fw-bold mb-3">Toggle Element </p>
+                                    <p>
+                                     <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                                       Toggle width collapse
+                                     </button>
+                                   </p>
+                                   <div style="min-height: 120px;">
+                                     <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                       <div class="card card-body" style="width: 300px;">
+                                         This is some placeholder content for a horizontal collapse. It's hidden by default and shown when triggered.
+                                       </div>
+                                     </div>
+                                   </div>
+                     
+                                   <p>
+                                     <a class="btn btn-warning" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+                                     <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+                                     <button class="btn btn-dark" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+                                   </p>
+                                   <div class="row">
+                                     <div class="col">
+                                       <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                         <div class="card card-body">
+                                           Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                         </div>
+                                       </div>
+                                     </div>
+                                     <div class="col">
+                                       <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                         <div class="card card-body">
+                                           Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                                         </div>
+                                       </div>
+                                     </div>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-card" role="tabpanel"  tabindex="0">
+                            <div class="card bootstrap-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Card</p>
+                                <div class="card-element">
+                                     <div class="card" style="width: 18rem;">
+                                         <img src="./images/location-img.jpg" class="card-img-top" alt="...">
+                                         <div class="card-body">
+                                         <h5 class="card-title">Card title</h5>
+                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                         <a href="#" class="btn btn-primary">Go somewhere</a>
+                                         </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-btn-size" role="tabpanel"  tabindex="0">
+                            <div class="card bootstrap-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Button Group</p>
+                                <div class="btn-grp-element">
+                                     <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                         <button type="button" class="btn btn-outline-info">Left</button>
+                                         <button type="button" class="btn btn-outline-primary">Middle</button>
+                                         <button type="button" class="btn btn-outline-danger">Right</button>
+                                     </div>
+                     
+                                     <p class="my-3 fw-bold">Custom-checkbox</p>
+                                     <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                                         <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                                         <label class="btn btn-outline-dark" for="btncheck1">Checkbox 1</label>
+                                       
+                                         <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                                         <label class="btn btn-outline-primary" for="btncheck2">Checkbox 2</label>
+                                       
+                                         <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                                         <label class="btn btn-outline-secondary" for="btncheck3">Checkbox 3</label>
+                                     </div>
+                     
+                                     <p class="my-3 fw-bold">Custom-Radio</p>
+                                     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                         <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                                         <label class="btn btn-outline-primary" for="btnradio1">Radio 1</label>
+                                       
+                                         <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                                         <label class="btn btn-outline-success" for="btnradio2">Radio 2</label>
+                                       
+                                         <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                                         <label class="btn btn-outline-danger" for="btnradio3">Radio 3</label>
+                                     </div>
+                     
+                                     <p class="my-3 fw-bold">Sizing</p>
+                                     <div class="btn-group btn-group-lg" role="group" aria-label="Large button group">
+                                         <button type="button" class="btn btn-outline-dark">Left</button>
+                                         <button type="button" class="btn btn-outline-dark">Middle</button>
+                                         <button type="button" class="btn btn-outline-dark">Right</button>
+                                     </div>
+                                       <br>
+                                     <div class="btn-group mt-3" role="group" aria-label="Default button group">
+                                         <button type="button" class="btn btn-outline-info">Left</button>
+                                         <button type="button" class="btn btn-outline-warning">Middle</button>
+                                         <button type="button" class="btn btn-outline-primary">Right</button>
+                                     </div>
+                                       <br>
+                                     <div class="btn-group mt-3 btn-group-sm" role="group" aria-label="Small button group">
+                                         <button type="button" class="btn btn-outline-dark">Left</button>
+                                         <button type="button" class="btn btn-outline-dark">Middle</button>
+                                         <button type="button" class="btn btn-outline-dark">Right</button>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-btn" role="tabpanel"  tabindex="0">
+                            <div class="card bootstrap-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Button</p>
+                                <div class="btn-element">
+                                    <button type="button" class="btn btn-primary btn-sm">Small button</button>
+                                    <button class="btn btn-success" type="submit">Button</button>
+                                    <button type="button" class="btn btn-danger btn-lg">Large button</button>
+                                    <div class="d-grid gap-2 mt-2">
+                                        <button class="btn btn-warning" type="button">Button</button>
+                                    </div>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-alert" role="tabpanel"  tabindex="0">
+                            <div class="card bootstrap-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Alert</p>
+                                <div class="alert-element">
+                                    <div class="alert-main">
+                                        <div id="liveAlertPlaceholder"></div>
+                                        <button type="button" class="btn btn-info" id="liveAlertBtn">Show live alert</button>
+                                    </div>
+                               </div> 
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-accordion" role="tabpanel"  tabindex="0">
+                            <div class="card bootstrap-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Accordion</p>
+                                <div class="accordion-element">
+                                     <div class="accordion" id="accordionFlushExample">
+                                         <div class="accordion-item">
+                                             <h2 class="accordion-header" id="flush-headingOne">
+                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                 Accordion Item #1
+                                                 </button>
+                                             </h2>
+                                             <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                 <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                             </div>
+                                         </div>
+                                         <div class="accordion-item">
+                                             <h2 class="accordion-header" id="flush-headingTwo">
+                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                 Accordion Item #2
+                                                 </button>
+                                             </h2>
+                                             <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                 <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                             </div>
+                                         </div>
+                                         <div class="accordion-item">
+                                             <h2 class="accordion-header" id="flush-headingThree">
+                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                 Accordion Item #3
+                                                 </button>
+                                             </h2>
+                                             <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                 <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-form-element" role="tabpanel"  tabindex="0">
+                            <div class="card bootstrap-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Form Elements</p>
+                                <div class="form-concept">
+                                     <form>
+                                         <div class="mb-3">
+                                             <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                         </div>
+                                         <div class="mb-3">
+                                             <label for="exampleInputPassword1" class="form-label">Password</label>
+                                             <input type="password" class="form-control" id="exampleInputPassword1">
+                                         </div>
+                                         <div class="mb-3 form-check">
+                                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                             <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                         </div>
+                                         <div class="mb-3">
+                                             <input class="form-control mb-2 form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example">
+                                             <input class="form-control mb-2" type="text" placeholder="Default input" aria-label="default input example">
+                                             <input class="form-control mb-2 form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+                                         </div>
+                     
+                                         <p class="fw-bold ms-3">Select</p>
+                                         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                             <option selected>Open this select menu</option>
+                                             <option value="1">One</option>
+                                             <option value="2">Two</option>
+                                             <option value="3">Three</option>
+                                         </select>
+                                           
+                                         <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+                                             <option selected>Open this select menu</option>
+                                             <option value="1">One</option>
+                                             <option value="2">Two</option>
+                                             <option value="3">Three</option>
+                                         </select>
+                     
+                                         <p class="fw-bold ms-3">Checks & Radios</p>
+                     
+                                         <div class="form-check mb-3">
+                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                             <label class="form-check-label" for="flexCheckDefault">
+                                               Default checkbox
+                                             </label>
+                                         </div>
+                                         <div class="form-check mb-3">
+                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                             <label class="form-check-label" for="flexCheckChecked">
+                                               Checked checkbox
+                                             </label>
+                                         </div>
+                     
+                                         <div class="form-check mb-3">
+                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+                                             <label class="form-check-label" for="flexCheckCheckedDisabled">
+                                               Disabled checked checkbox
+                                             </label>
+                                         </div>
+                     
+                                         <div class="form-check mb-0">
+                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                             <label class="form-check-label" for="flexRadioDefault1">
+                                               Default radio
+                                             </label>
+                                         </div>
+                                         <div class="form-check mb-0">
+                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                             <label class="form-check-label" for="flexRadioDefault2">
+                                               Default checked radio
+                                             </label>
+                                         </div>
+                     
+                                         <div class="form-check mb-0">
+                                             <input class="form-check-input" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled" checked disabled>
+                                             <label class="form-check-label" for="flexRadioCheckedDisabled">
+                                               Disabled checked radio
+                                             </label>
+                                         </div>
+                     
+                                         <p class="fw-bold my-3">Switch</p>
+                                         <div class="form-check form-switch">
+                                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                             <label class="form-check-label" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+                                           </div>
+                                           <div class="form-check form-switch">
+                                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                             <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                                           </div>
+                                           <div class="form-check form-switch">
+                                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDisabled" disabled>
+                                             <label class="form-check-label" for="flexSwitchCheckDisabled">Disabled switch checkbox input</label>
+                                           </div>
+                                           <div class="form-check form-switch">
+                                             <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckCheckedDisabled" checked disabled>
+                                             <label class="form-check-label" for="flexSwitchCheckCheckedDisabled">Disabled checked switch checkbox input</label>
+                                           </div>
+                     
+                     
+                                         <p class="fw-bold my-3">custom Radio buttons and checkbox</p>
+                                         <div class="mb-3">
+                                             <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                                             <label class="btn btn-outline-info" for="btn-check-outlined">Single toggle</label><br>
+                                         </div>
+                     
+                                         <div class="mb-3">
+                                             <input type="checkbox" class="btn-check" id="btn-check-2-outlined" checked autocomplete="off">
+                                             <label class="btn btn-outline-secondary" for="btn-check-2-outlined">Checked</label><br>
+                                         </div>
+                     
+                                         <div class="mb-3">
+                                             <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+                                             <label class="btn btn-outline-success" for="success-outlined">Checked success radio</label>
+                         
+                                             <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                                             <label class="btn btn-outline-danger" for="danger-outlined">Danger radio</label>
+                                         </div>
+                     
+                                         <button type="submit" class="btn btn-primary">Submit</button>
+                     
+                                     </form>
+                     
+                     
+                                     <p class="fw-bold my-3">Form Layout</p>
+                                     <form class="row g-3">
+                                         <div class="col-md-6">
+                                           <label for="inputEmail4" class="form-label">Email</label>
+                                           <input type="email" class="form-control" id="inputEmail4">
+                                         </div>
+                                         <div class="col-md-6">
+                                           <label for="inputPassword4" class="form-label">Password</label>
+                                           <input type="password" class="form-control" id="inputPassword4">
+                                         </div>
+                                         <div class="col-12">
+                                           <label for="inputAddress" class="form-label">Address</label>
+                                           <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                         </div>
+                                         <div class="col-12">
+                                           <label for="inputAddress2" class="form-label">Address 2</label>
+                                           <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                         </div>
+                                         <div class="col-md-6">
+                                           <label for="inputCity" class="form-label">City</label>
+                                           <input type="text" class="form-control" id="inputCity">
+                                         </div>
+                                         <div class="col-md-4">
+                                           <label for="inputState" class="form-label">State</label>
+                                           <select id="inputState" class="form-select">
+                                             <option selected>Choose...</option>
+                                             <option>...</option>
+                                           </select>
+                                         </div>
+                                         <div class="col-md-2">
+                                           <label for="inputZip" class="form-label">Zip</label>
+                                           <input type="text" class="form-control" id="inputZip">
+                                         </div>
+                                         <div class="col-12">
+                                           <div class="form-check">
+                                             <input class="form-check-input" type="checkbox" id="gridCheck">
+                                             <label class="form-check-label" for="gridCheck">
+                                               Check me out
+                                             </label>
+                                           </div>
+                                         </div>
+                                         <div class="col-12">
+                                           <button type="submit" class="btn btn-warning">Sign in</button>
+                                         </div>
+                                     </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-table" role="tabpanel"  tabindex="0">
+                            <div class="card bootstrap-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Table</p>
+                                <div class="table-concept my-5">
+                                     <table class="table table-dark table-striped table-borderless">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">First</th>
+                                                <th scope="col">Last</th>
+                                                <th scope="col">Handle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Mark</td>
+                                                <td>Otto</td>
+                                                <td>@mdo</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Jacob</td>
+                                                <td>Thornton</td>
+                                                <td>@fat</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td colspan="2">Larry the Bird</td>
+                                                <td>@twitter</td>
+                                            </tr>
+                                        </tbody>
+                                     </table>
+                     
+                                     <p class="fw-bold">Table Row Hover Property with Responsive</p>
+                                     <div class="table-responsive">
+                                         <table class="table table-dark table-hover border-light">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">First</th>
+                                                    <th scope="col">Last</th>
+                                                    <th scope="col">Handle</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>Mark</td>
+                                                    <td>Otto</td>
+                                                    <td>@mdo</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>Jacob</td>
+                                                    <td>Thornton</td>
+                                                    <td>@fat</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td colspan="2">Larry the Bird</td>
+                                                    <td>@twitter</td>
+                                                </tr>
+                                            </tbody>
+                                         </table>
+                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-offset" role="tabpanel"  tabindex="0">
+                            <div class="card bootstrap-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Offset</p>
+                                <div class="row mt-2">
+                                    <div class="col-md-4 bg-light py-3 border">.col-md-4</div>
+                                    <div class="col-md-4 offset-md-4 bg-light py-3 border">.col-md-4 .offset-md-4</div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-md-3 offset-md-3 bg-light py-3 border">.col-md-3 .offset-md-3</div>
+                                    <div class="col-md-3 offset-md-3 bg-light py-3 border">.col-md-3 .offset-md-3</div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col-md-6 offset-md-3 bg-light py-3 border">.col-md-6 .offset-md-3</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-blockquote" role="tabpanel"  tabindex="0">
+                            <div class="card bootstrap-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Blockquote</p>
+                                <div class="use-of-blockquote">
+                                    <figure class="text-start">
+                                     <blockquote class="blockquote">
+                                       <p>A well-known quote, contained in a blockquote element.</p>
+                                     </blockquote>
+                                     <figcaption class="blockquote-footer">
+                                       Someone famous in <cite title="Source Title">Source Title</cite>
+                                     </figcaption>
+                                   </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-row-column" role="tabpanel"  tabindex="0">
+                            <div class="card bootstrap-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Row Column</p>
+                                <div class="row">
+                                    <div class="col bg-light py-3 border">
+                                      Column
+                                    </div>
+                                    <div class="col bg-light py-3 border">
+                                      Column
+                                    </div>
+                                    <div class="col bg-light py-3 border">
+                                      Column
+                                    </div>
+                                </div>
+                
+                                <div class="row mt-2">
+                                    <div class="col bg-light py-3 border">
+                                      1 of 3
+                                    </div>
+                                    <div class="col-6 bg-light py-3 border">
+                                      2 of 3 (wider)
+                                    </div>
+                                    <div class="col bg-light py-3 border">
+                                      3 of 3
+                                    </div>
+                                </div>
+                                <div class="row mt-2">
+                                    <div class="col bg-light py-3 border">
+                                      1 of 3
+                                    </div>
+                                    <div class="col-5 bg-light py-3 border">
+                                      2 of 3 (wider)
+                                    </div>
+                                    <div class="col bg-light py-3 border">
+                                      3 of 3
+                                    </div>
+                                </div>
+                
+                                <div class="row row-cols-5 mt-3">
+                                    <div class="col bg-light py-3 border">Column</div>
+                                    <div class="col bg-light py-3 border">Column</div>
+                                    <div class="col bg-light py-3 border">Column</div>
+                                    <div class="col bg-light py-3 border">Column</div>
+                                    <div class="col bg-light py-3 border">Column</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-demos" role="tabpanel"  tabindex="0">
+                            <div class="card bootstrap-card rounded-0 shadow-sm p-4">
+                                <p class="fw-bold h5 mb-3">Bootstrap Demos</p>
+                                <div class="row">
+                                    <div class="col-lg-4 mt-4">
+                                        <div class="card demo-detail-card">
+                                            <img src="./images/bootstrap-elements.png" class="card-img-top p-1" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Bootstrap Demo Elements</h5>
+                                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                                <a href="http://bootstrap-elements.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                      <div class="card demo-detail-card">
+                                          <img src="./images/bootstrap-task-1.png" class="card-img-top p-1" alt="...">
+                                          <div class="card-body">
+                                              <h5 class="card-title">Bootstrap Demo 1</h5>
+                                              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                              <a href="http://bootstrap-demo-1.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                        <div class="card demo-detail-card">
+                                            <img src="./images/bootstrap-task-2.png" class="card-img-top p-1" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Bootstrap Demo 2</h5>
+                                                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                                <a href="http://bootstrap-demo-2.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                      <div class="card demo-detail-card">
+                                          <img src="./images/bootstrap-task-3.png" class="card-img-top p-1" alt="...">
+                                          <div class="card-body">
+                                              <h5 class="card-title">Bootstrap Demo 3</h5>
+                                              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                              <a href="http://bootstrap-demo-4.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mt-4">
+                                      <div class="card demo-detail-card">
+                                          <img src="./images/bootstrap-task-4.png" class="card-img-top p-1" alt="...">
+                                          <div class="card-body">
+                                              <h5 class="card-title">Bootstrap Demo 4</h5>
+                                              <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                                              <a href="http://bootstrap-demo-5.shraddha.gediya.radixusers3.com/" target="_blank" class="btn theme-btn">Click Here</a>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script>
+
+        const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    
+        const alert = (message, type) => {
+            const wrapper = document.createElement('div')
+            wrapper.innerHTML = [
+                `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+                `   <div>${message}</div>`,
+                '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+                '</div>'
+            ].join('')
+            
+            alertPlaceholder.append(wrapper)
+            }
+    
+            const alertTrigger = document.getElementById('liveAlertBtn')
+            if (alertTrigger) {
+            alertTrigger.addEventListener('click', () => {
+                alert('Nice, you triggered this alert message!', 'success')
+            })
+        }
+
+
+        // const scrollSpy = new bootstrap.ScrollSpy(document.body, {
+        //     target: '#navbar-example2'
+        // })
+
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) { 
+          toastTrigger.addEventListener('click', () => {
+            const toast = new bootstrap.Toast(toastLiveExample)
+            toast.show()
+        })
+    }
+    </script>
+
+</body>
+</html>

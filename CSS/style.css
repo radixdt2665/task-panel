@@ -1,0 +1,143 @@
+@font-face {
+  font-family: "vogue";
+  src: url(../fonts/Vogue.ttf);
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+html,
+body {
+  font-family: "roboto";
+  position: relative;
+}
+
+
+.btn-theme{background-color: #cad2c5;color: #52796f;}
+.btn-theme:hover{background-color: #52796f;color: #ffffff;}
+
+/* navbar css start */
+.custom-navbar {background-color: #cad2c5;font-family: "vougue";border-bottom: 1px solid #52796f42;position: sticky;top: 0;z-index: 999;}
+.custom-navbar .nav-logo {height: 50px;width: 50px;border-radius: 50%;background: black;color: #fff;display: flex;justify-content: center;align-items: center;}
+.custom-navbar .nav-link {color: #52796f;font-weight: bold;letter-spacing: 3px;font-size: 20px;}
+.custom-navbar .nav-item{position: relative;transition: 0.6s ease-in;margin-left: 15px;}
+.custom-navbar .nav-item::after{content: '';position: absolute;width: 0%;height: 1px;background: #52796f;bottom: 0;left: 0;}
+.custom-navbar .nav-item::before{content: '';position: absolute;width: 0%;height: 1px;background: #52796f;bottom: 2px;left: 0;}
+
+
+.custom-navbar .nav-item:hover::after,
+.custom-navbar .nav-item:hover::before,
+.custom-navbar .nav-item.active::after {width: 100%;transition: 0.6s ease-in;}
+/* navbar css end */
+
+
+/* banner-section css start */
+.banner-section .side-nav{background-color: #cad2c5;position: fixed;top: 63px;width: 20%;overflow-y: scroll;}
+.banner-section .side-nav .side-nav-ul{}
+.banner-section .side-nav .side-nav-li{border: 0;padding: 10px;display: block;border-bottom: 1px solid #52796f42;width: 100%;background: transparent;}
+.banner-section .card{border-color: #cad2c51f;background: #cad2c51f;}
+.banner-section .card .common-icon-css{font-size: 4rem;}
+.banner-section .card.html-card .common-icon-css{color: #e55639;}
+.banner-section .card.css-card .common-icon-css{color: #1472B5;}
+.banner-section .card.bootstrap-card .common-icon-css{color: #7532fa;}
+
+.banner-section .side-nav .side-nav-li.active{background-color: #718b84;color: #fff;}
+/* banner-section css end */
+
+
+
+
+
+/* html-page css start */
+.table-element .table-main,tr,td,th{border: 1px solid #ddd;}
+.spacing-concept .box{height: 300px;width: 300px;background-color: #eee;}
+.spacing-concept .sub-box{height: 250px;width: 250px;background-color: #ddd;}
+.align-items-content .h-150{height: 150px;}
+
+.side-nav .accordion-item{background-color: transparent;border: none;}
+.side-nav .accordion-button{background-color: transparent;}
+.side-nav .accordion-header{border-bottom: 1px solid #abbbaf;}
+.side-nav .accordion-button:focus{box-shadow: 0 0 0 0.25rem rgb(170 181 163);}
+.side-nav .accordion-button:not(.collapsed){background-color: #cad2c5;color: #212529;}
+/* html-page-css end */
+
+
+/* css page css start */
+.css-file .border-card p.dotted {border-style: dotted;border-color: green;}
+.css-file .border-card p.dashed {border-style: dashed;}
+.css-file .border-card p.solid {border-style: solid;border-radius: 15px;}
+.css-file .border-card p.double {border-style: double;}
+.css-file .border-card p.groove {border-style: groove;}
+.css-file .border-card p.ridge {border-style: ridge;}
+.css-file .border-card p.inset {border-style: inset;}
+.css-file .border-card p.outset {border-style: outset;}
+.css-file .border-card p.none {border-style: none;}
+.css-file .border-card p.hidden {border-style: hidden;}
+.css-file .border-card p.mix {border-style: dotted dashed solid double;}
+
+.css-file .nth-child-css span{display: block;color: #a19c9c;}
+.css-file .nth-child-css span:nth-of-type(3n+4){color: #c5ad8f;font-weight: bold;}
+.css-file .position-concept .p-relative{position: relative;height: 500px;width: 500px;background-color: #eee;}
+.css-file .position-concept .p-absolute{position: relative;;border: 2px solid #ddd;height: 400px;width: 400px;}
+.css-file .position-concept .p-absolute .t-0{position: absolute;top: 0;left: 0;}
+.css-file .position-concept .p-absolute .b-0{position: absolute;bottom: 0;left: 0;}
+.css-file .position-concept .p-absolute .l-0{position: absolute;top: 0;right: 0;}
+.css-file .position-concept .p-absolute .r-0{position: absolute;bottom: 0;right: 0;}
+.css-file .position-concept .p-fixed{position: fixed;background-color: #fff;color: #000000;bottom: 0;right: 0;height: 200px;width: 200px;padding: 10px;}
+.css-file .position-concept .p-sticky{position: sticky;background-color: #fff;color: #000000;padding: 10px;top: 0;left: 0;}
+
+.css-file .css-selectors-main .parent-div>p{color: red;}
+.css-file .css-selectors-main .parent-div+p{color: green;}
+.css-file .css-selectors-main .parent-div-2~p{color: #8f5757;}
+.css-file .css-selectors-main .first-child-css > :first-child{color: #000;background-color: #dbd9d9;}
+.css-file .css-selectors-main .first-of-type p:first-of-type{background: green;}
+.css-file .css-selectors-main .last-child-css{border: 1px solid #dbd9d9;padding: 10px;}
+.css-file .css-selectors-main .last-child-css .ul-main > :last-child{background-color: #dbd9d9;color: #000000;}
+.css-file .css-selectors-main .last-child-type-css{border: 1px solid #dbd9d9;padding: 10px;}
+.css-file .css-selectors-main .last-child-type-css span:last-of-type{background-color: #dbd9d9;color: #000000;}
+.css-file .transition-css .box {width: 100px;height: 100px;background: red;transition: width 2s;}
+.css-file .transition-css #div1 {transition-timing-function: linear;}
+.css-file .transition-css #div2 {transition-timing-function: ease;}
+.css-file .transition-css #div3 {transition-timing-function: ease-in;}
+.css-file .transition-css #div4 {transition-timing-function: ease-out;}
+.css-file .transition-css #div5 {transition-timing-function: ease-in-out;}
+.css-file .transition-css .box:hover {width: 300px;}
+
+.css-file .css-masking .mask1{ -webkit-mask-image: url(../images/w3logo.png); mask-image: url(../images/w3logo.png);mask-repeat: no-repeat;   -webkit-mask-repeat: no-repeat;}    
+
+.css-file .css-counter {counter-reset: section;}
+.css-file .css-counter .para::before{counter-increment: section;content: "Para " counter(section) ": ";}
+
+/* unvisited link */
+.css-file .pseudo-card a:link {color: red;}
+
+/* visited link */
+.css-file .pseudo-card a:visited {color: green;}
+
+/* mouse over link */
+.css-file .pseudo-card a:hover {color: hotpink;}
+
+/* selected link */
+.css-file .pseudo-card a:active {color: blue;}
+/* css page css end */
+
+
+
+/* bootstrap-file css start */
+.bootstrap-file .aspect-ratio-element .ratio::before{border: 1px solid #eee;background-color: #ddd;}
+
+.bootstrap-file .stretch-link-card .card{position: relative;z-index: 99;}
+
+@media (max-width: 991px) {
+  .bootstrap-file .tab-card .tab-content>.tab-pane {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.theme-btn{background-color: #718b84;color: #ffffff;}
+.theme-btn:hover,:not(.theme-btn-check)+.theme-btn.btn:active{color: #4c5c58;background-color: #cad2c5;border-color: #4c5c58;}
+.demo-detail-card{border-color: #718b8459!important;}
+.demo-detail-card .card-img-top{height: 250px;object-fit: contain;}
+/* bootstrap-file css end */
